@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Sen", sans-serif;     */
+}
+.navbar {
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  min-height: 100vh;
+  background-color: rgb(180, 46, 46);
+}
+.title-main {
+  font-size: 35px;
+  color: gold;
+  margin-bottom: 40px;
+}
+.navbar span {
+  margin: 10px 0;
+  font-size: 18px;
+  font-family: "Sen", sans-serif;
+}
+.navbar a {
+  text-decoration: none;
+  color: burlywood;
+}
+.navbar a:visited {
+  color: goldenrod;
+}
+.main-doc {
+  padding: 30px;
+  max-width: 80%;
+  position: relative;
+  left: 20%;
+  background-color: antiquewhite;
+}
+section {
+  margin-bottom: 30px;
+}
+section header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+section p {
+  margin-bottom: 20px;
+  font-family: "Sen", sans-serif;
+  margin-left: 20px;
+}
+.goodbye{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(180, 46, 46);
+    margin-left: 0;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 5px;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    min-height: 5px;
+    opacity: 1;
+  }
+  .title-main {
+    display: none;
+  }
+  .main-doc {
+    max-width: 100%;
+    left: 0;
+  }
+}
